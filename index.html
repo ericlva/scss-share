@@ -30,6 +30,9 @@
 				<section>
 					<h1>Sass</h1>
 					<h3>一种动态样式语言</h3>
+					<p>
+						<small>Created by <a href="http://www.zuoby.com">左邦阳</a></small>
+					</p>
 				</section>
 
 				<section>
@@ -181,6 +184,7 @@ $ npm install stylus</li>
 						<li class="fragment">图片自动合成雪碧图，并且生成坐标</li>
 						<li class="fragment">取img 宽高</li>
 						<li class="fragment">base64转码</li>
+						<li class="fragment">自动生成浏览器私有前缀</li>
 					</ul>
 				</section>
 
@@ -192,16 +196,12 @@ $ npm install stylus</li>
 				</section>
 
 				<section data-transition="linear" data-background="#603cbb" data-background-transition="slide">
-					<h2>图片自动合成雪碧图，并且生成坐标</h2>
-					<p>
-						@import "../images/*.png"; 图片路径<br>
-						$images-layout:vertical; 图片合并风格(vertical垂直 horizontal水平 diagonal对角线 smart智能)<br>
-						@include all-images-sprites;
-					</p>
-					<img src="img/sprite.jpg" class="fragment">
+					<section><h2>图片自动合成雪碧图，并且生成坐标</h2></section>
+					<section><img src="img/sprite.jpg"></section>
+					<section><img src="img/sprite-site.jpg"></section>
 				</section>
 
-				<section data-transition="linear" data-background="#2d89ef" data-background-transition="slide">
+				<section data-transition="linear" data-background="#bb1d48" data-background-transition="slide">
 					<h2>取img 宽高</h2>
 					<p>
 						.icon-w-h{
@@ -218,17 +218,14 @@ $ npm install stylus</li>
 				</section>
 
 				<section data-transition="linear" data-background="#00a500" data-background-transition="slide">
-					<h2>base64转码</h2>
-					<p>
-						.icon-base64{
-							background:inline-image('../images/icon2.png');
-						}<br/>
+					<section><h2>base64转码</h2></section>
+					<section><img src="img/base64.jpg"></section>
+				</section>
 
-						生成后的代码：<br/>
-						.icon-base64 {
-						  background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAAAQCAMAAACROYkbAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAJBQTFRFbBYW9kFB8D09uSUq0Ccn2S0t/aeodBwcfwIGrh0j0xoZZBAQqBkfWgoKxiwx6EJE70dJ9UtNnCsthwUI4D1AqzQ21zc7pA0OzjI2lQgLzxkYthISwxYWyhcX4S8vkw0RvRQUwBsbeyAg4TMzyCEhtxUV6Tg4sBAQqQsL+0VF/0hIowYGngMDQEBA////AAAA0W4/YgAAADB0Uk5T//////////////////////////////////////////////////////////////8AYqXQeAAAARhJREFUeNqM0IlSg0AMBuBQDo/KUaFA7xapWLX/vv/bSbILLIw6fMOEP0DCAH3OpAbPFkW3XmWfqtvYfZjfHoPecUsOqxikOqicrnF61rw6BKv1etVqa3CgBcOgbRZDNux5tU8SIEl03dO78SA4SAPdaKN5dY5jII51PdObod/JgaxGjOfVLsuA1xaQZTvyBRGIpPh+l8jcm8yrJs+7b8zzhjwx/APPIyuzybwqyrJ7oCwLqgXqJeMgBzeojemCKAKiSNeCLgIX2chhydV0xnjBxnUB19V1Q1eBK8IwhASuoe46/y1oBBp5ZzvFWTdoBvaC9MmS0oeAOQGSYV3T7AWnl94ppa+ZrA2PFkXfc6nf0X2uPxb8CDAAy+mLNGB0apUAAAAASUVORK5CYII=');
-						}
-					</p>
+				<section data-transition="linear" data-background="#5e3bb9" data-background-transition="slide">
+					<section><h2>自动生成浏览器私有前缀</h2></section>
+					
+					<section><img src="img/browser.jpg"></section>
 				</section>
 
 				<section>
